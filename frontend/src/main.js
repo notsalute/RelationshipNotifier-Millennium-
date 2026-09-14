@@ -11,6 +11,7 @@ function scanWindows() {
 }
 
 function start() {
+    installMillenniumTab();
     scanWindows();
     listeners.add(renderAllTrays);
 
@@ -33,8 +34,8 @@ function start() {
 const plugin = M.definePlugin(() => {
     start();
     return {
-        title: "Relationship Notifier",
+        title: "RelationshipNotifier",
         icon: h(M.IconsModule.Settings, null),
-        content: h(HistoryPanel, null),
+        content: h(SettingsPanel, null),
     };
 });

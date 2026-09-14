@@ -13,6 +13,7 @@ const MASS_DROP_MIN = 5;
 
 const STEAMID64_BASE = 76561197960265728n;
 const HISTORY_KEY = "RelationshipNotifier:history";
+const SETTINGS_KEY = "RelationshipNotifier:settings";
 const FRIENDS_KEY_PREFIX = "RelationshipNotifier:friends:";
 const STYLE_ID = "relationship-notifier-style";
 const TOAST_STACK_ID = "relationship-notifier-stack";

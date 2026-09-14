@@ -1,4 +1,9 @@
 function notify(kind, steamid, info, previousName) {
+    if (kind !== "test" && !isKindEnabled(kind)) {
+        log("muted", kind, steamid);
+        return;
+    }
+
     const meta = kindInfo(kind);
     const name = info?.name || "Unknown (" + steamid + ")";
     const [title, body] = meta.text(name, previousName);
@@ -6,6 +11,7 @@ function notify(kind, steamid, info, previousName) {
 
     record(entry);
     if (meta.toast) showToast(entry);
+    if (kind === "test" || isDesktopEnabled(kind)) showDesktopNotification(entry);
     log(kind, steamid, title);
 }
 

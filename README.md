@@ -2,7 +2,7 @@
 
 Millennium plugin for Steam that lets you know when someone unfriends you.
 
-It also picks up new friends, name changes and deleted accounts, and keeps a log when you unfriend or block someone yourself. Alerts show up as a popup in the corner and in the Steam notification bell.
+It also picks up new friends, name changes and deleted accounts, and keeps a log when you unfriend or block someone yourself. Alerts show up as a popup in the corner, in the Steam notification bell, and as a Steam desktop popup that still shows when Steam is minimized.
 
 Steam doesn't tell you when you get blocked, so a block just shows up as an unfriend.
 
@@ -15,7 +15,9 @@ Steam doesn't tell you when you get blocked, so a block just shows up as an unfr
 
 The first time it runs it just saves your friends list, so you'll only get alerts for changes after that.
 
-F4 sends a test notification. History and settings are under Millennium > Relationship Notifier.
+F4 sends a test notification.
+
+Settings are under Millennium > RelationshipNotifier. You can turn each alert on or off, pick which ones also get the desktop popup, change their colors, and look through the history. Everything is on by default.
 
 ## Building
 

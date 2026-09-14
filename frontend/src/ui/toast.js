@@ -23,7 +23,7 @@ function showToast(entry) {
     text.append(make(doc, "div", "jn-title", entry.title), make(doc, "div", "jn-body", entry.body));
 
     const card = make(doc, "div", "jn-toast");
-    card.style.setProperty("--jn-accent", kindInfo(entry.kind).accent);
+    card.style.setProperty("--jn-accent", kindAccent(entry.kind));
     card.append(avatarElement(doc, entry, "jn-toast-img"), text);
     getToastStack(doc).appendChild(card);
 

@@ -85,7 +85,7 @@ function buildTrayItem(doc, item, unread) {
     text.append(meta, make(doc, "div", "jn-tray-title", item.title), make(doc, "div", "jn-tray-body", item.body));
 
     const card = make(doc, "div", "jn-tray-item");
-    card.style.setProperty("--jn-accent", kindInfo(item.kind).accent);
+    card.style.setProperty("--jn-accent", kindAccent(item.kind));
     card.append(avatarElement(doc, item, "jn-tray-img"), make(doc, "div", "jn-tray-bar"), text);
     if (unread) card.appendChild(make(doc, "div", "jn-tray-dot"));
     card.addEventListener("click", () => openProfile(item.steamid));
@@ -110,7 +110,9 @@ function renderTray(doc) {
         return;
     }
 
-    const signature = items.map((item) => entryKey(item) + (unread.has(entryKey(item)) ? "*" : "")).join("|");
+    const signature = items
+        .map((item) => entryKey(item) + kindAccent(item.kind) + (unread.has(entryKey(item)) ? "*" : ""))
+        .join("|");
     if (list && list.dataset.sig === signature) return;
 
     ensureStyles(doc);

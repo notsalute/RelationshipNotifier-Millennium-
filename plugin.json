@@ -4,6 +4,6 @@
     "name": "RelationshipNotifier",
     "common_name": "Relationship Notifier",
     "description": "Get notified when someone unfriends you on Steam.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "backendType": "lua"
 }

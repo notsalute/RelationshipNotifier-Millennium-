@@ -21,10 +21,12 @@
     <File Path="frontend/src/core/constants.js" />
     <File Path="frontend/src/core/kinds.js" />
     <File Path="frontend/src/core/notify.js" />
+    <File Path="frontend/src/core/settings.js" />
     <File Path="frontend/src/core/storage.js" />
     <File Path="frontend/src/core/watcher.js" />
   </Folder>
   <Folder Name="/frontend/src/steam/">
+    <File Path="frontend/src/steam/desktopNotify.js" />
     <File Path="frontend/src/steam/friends.js" />
     <File Path="frontend/src/steam/selfActions.js" />
     <File Path="frontend/src/steam/windows.js" />
@@ -33,6 +35,7 @@
     <File Path="frontend/src/ui/dom.js" />
     <File Path="frontend/src/ui/hotkeys.js" />
     <File Path="frontend/src/ui/icons.js" />
+    <File Path="frontend/src/ui/millenniumTab.js" />
     <File Path="frontend/src/ui/panel.js" />
     <File Path="frontend/src/ui/styles.js" />
     <File Path="frontend/src/ui/toast.js" />
