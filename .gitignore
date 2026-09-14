@@ -1,0 +1,5 @@
+.millennium/
+release/
+node_modules/
+.vs/
+*.log

@@ -1,0 +1,46 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+    <File Path="package.json" />
+    <File Path="plugin.json" />
+  </Folder>
+  <Folder Name="/backend/">
+    <File Path="backend/main.lua" />
+    <File Path="backend/profile.lua" />
+  </Folder>
+  <Folder Name="/frontend/" />
+  <Folder Name="/frontend/loader/">
+    <File Path="frontend/loader/footer.js" />
+    <File Path="frontend/loader/header.js" />
+  </Folder>
+  <Folder Name="/frontend/src/">
+    <File Path="frontend/src/main.js" />
+  </Folder>
+  <Folder Name="/frontend/src/core/">
+    <File Path="frontend/src/core/constants.js" />
+    <File Path="frontend/src/core/kinds.js" />
+    <File Path="frontend/src/core/notify.js" />
+    <File Path="frontend/src/core/storage.js" />
+    <File Path="frontend/src/core/watcher.js" />
+  </Folder>
+  <Folder Name="/frontend/src/steam/">
+    <File Path="frontend/src/steam/friends.js" />
+    <File Path="frontend/src/steam/selfActions.js" />
+    <File Path="frontend/src/steam/windows.js" />
+  </Folder>
+  <Folder Name="/frontend/src/ui/">
+    <File Path="frontend/src/ui/dom.js" />
+    <File Path="frontend/src/ui/hotkeys.js" />
+    <File Path="frontend/src/ui/icons.js" />
+    <File Path="frontend/src/ui/panel.js" />
+    <File Path="frontend/src/ui/styles.js" />
+    <File Path="frontend/src/ui/toast.js" />
+    <File Path="frontend/src/ui/tray.js" />
+  </Folder>
+  <Folder Name="/scripts/">
+    <File Path="scripts/build.mjs" />
+    <File Path="scripts/install.ps1" />
+    <File Path="scripts/release.mjs" />
+  </Folder>
+</Solution>

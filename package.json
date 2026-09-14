@@ -1,0 +1,11 @@
+{
+  "name": "relationship-notifier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Steam unfriend notifier for Millennium",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "release": "node scripts/release.mjs",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1"
+  }
+}
